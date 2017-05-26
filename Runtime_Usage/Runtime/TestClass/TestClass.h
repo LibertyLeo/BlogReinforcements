@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- 遵循了两个协议, 但是不是重点, 故不对协议方法进行实现
+ 遵循了两个协议, 但仅用作用例测试使用, 故不对相关协议方法进行实现
  */
 @interface TestClass : NSObject<NSCoding, NSCopying>
 

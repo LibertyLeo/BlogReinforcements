@@ -17,7 +17,7 @@
  
  @param cls Class
  @return 类名
- */
+ */    
 + (NSString *)captureClassName:(Class)cls;
 
 /**

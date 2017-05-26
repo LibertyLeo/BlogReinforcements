@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RuntimeKit.h"
 #import "TestClass.h"
 #import "TestClass+Category.h"
 #import "TestClass+SwapMethod.h"
@@ -33,10 +34,10 @@ int main(int argc, const char * argv[]) {
         
 #if 1
         TestClass *test = [TestClass new];
-//        [TestClass classMethod:@"test"];
-//        [test publicInstanceMethodA:@"testA" withValueB:@"testB"];
-//        [test publicInstanceMethodB];
-//        [test performSelector:@selector(messMethod:) withObject:@"unknown method"];
+        [TestClass classMethod:@"test"];
+        [test publicInstanceMethodA:@"testA" withValueB:@"testB"];
+        [test publicInstanceMethodB];
+        [test performSelector:@selector(messMethod:) withObject:@"unknown method"];
         
         //  进行方法替换
         [test swapMethod];
